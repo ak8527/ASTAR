@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Custom.css">
+	<title>User Interface</title>
+</head>
+
+<body>
+	<h1> A* Implementation </h1>
+	<p> Click on the boxes and then &ensp;<i class="fa fa-play fa-1x"></i> </p> <br>
+	<div class="container">
+		<div class="obox"><div class="box" id="unlocked"></div><br><p>Unlocked</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="locked"></div><br><p>Locked</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="closed"></div><br><p>Closed</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="open"></div><br><p>Open</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="path"></div><br><p>Path</p>&nbsp;</div>
+		<br>
+	</div>
+	<br>
+	<div class="container"></div>
+	<br>
+	<center>
+		<i class="fa fa-play" onclick="find_shortest_path()" style="font-size: 5vw"></i>&emsp;&emsp;&emsp;
+		<i class="fa fa-repeat" onclick="reset()" style="font-size: 5vw"></i></center>
+	<script src="Custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
